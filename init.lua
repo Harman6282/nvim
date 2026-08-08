@@ -21,6 +21,14 @@ require("lazy").setup({
     branch = "v2.5",
     import = "nvchad.plugins",
   },
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      view = {
+        width = 20, -- adjust this number (default is usually 30)
+      },
+    },
+  },
 
   { import = "plugins" },
 }, lazy_config)
