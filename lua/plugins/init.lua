@@ -12,6 +12,17 @@ return {
       require "configs.lspconfig"
     end,
   },
+  {
+    "cpea2506/one_monokai.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("one_monokai").setup {
+        transparent = false,
+        italics = true,
+      }
+    end,
+  },
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
